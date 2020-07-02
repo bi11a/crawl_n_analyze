@@ -37,10 +37,10 @@ def crawl_n_analyze():
 
     print("Connecting to database...")
     mydb = mysql.connector.connect(
-        host=os.environ.get("DB_ENDPOINT"),
+        host="<DB_ENDPOINT>",
         user="<user>",
         passwd="<password>",
-        database=os.environ.get("TABLE_NAME")
+        database="<TABLE_NAME>"
     )
     print("Connected to database")
 
